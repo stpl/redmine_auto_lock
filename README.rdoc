@@ -1,0 +1,16 @@
+= Redmine Auto Lock
+
+== Install
+
+* Copy redmine_auto_lock plugin to {RAILS_APP}/plugins on your redmine path
+* Run rake redmine:plugins NAME=redmine_auto_lock RAILS_ENV=production
+* Run rake redmine_auto_lock:lock_user RAILS_ENV=production
+
+== Uninstall
+
+* rake redmine:plugins NAME=redmine_auto_lock RAILS_ENV=production
+* rm -r plugins/redmine_auto_lock
+
+== Requirements
+
+* Redmine 2.2.4.stable and above
