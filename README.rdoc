@@ -11,6 +11,12 @@
 * rake redmine:plugins NAME=redmine_auto_lock RAILS_ENV=production
 * rm -r plugins/redmine_auto_lock
 
+== How it works
+
+* Go to Administration > Users. Select a user > User's general information window.
+* Select "auto lock on" date.
+* When Rake task executes, it checks for current time. if time get passed then user account gets automatically locked.
+
 == Requirements
 
 * Redmine 2.2.4.stable and above
